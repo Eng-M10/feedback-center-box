@@ -30,8 +30,9 @@ export default function Feedback() {
 
                 // Agrupar os valores por sentimento (POSITIVE e NEGATIVE)
                 const aggregatedData = sentimentos.reduce(
+                   
                     (acc, item) => {
-                        if (item.sentiment === "POSITIVE") acc.positivos += item.value;
+                        if (item.sentiment === "POSITIVE") acc.positivos += item.value - 1;
                         if (item.sentiment === "NEGATIVE") acc.negativos += item.value;
                         return acc;
                     },
