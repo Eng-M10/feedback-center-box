@@ -6,11 +6,10 @@ import Home from "./components/Home.jsx";
 import Feedback from "./components/Feedback-data-center.jsx";
 
 
-
 function App() {
 
   return (
-    <>
+    < >
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/feedback-center' element={<Feedback/>} />

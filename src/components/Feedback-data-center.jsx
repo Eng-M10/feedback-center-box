@@ -20,7 +20,7 @@ export default function Feedback() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("http://127.0.0.1:8000/api/estatistica");
+                const response = await fetch("https://feedbackboxapp-master-hgpqqh.laravel.cloud/api/estatistica");
                 const result = await response.json();
 
                 const sentimentos = result.sentimento;
