@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, {useState} from "react";
 import Swal from "sweetalert2";
 import cover from "../assets/cover.jpg"
@@ -98,20 +97,22 @@ export default function Home() {
 
 
     return (
-        <div className="bg-gray-100 flex flex-col min-w-screen">
+        <div className="bg-gray-100 flex flex-col ">
             {/* Cabeçalho */}
             <header className="text-white p-6 flex ">
-                <h1 className="uppercase text-xl font-bold align-left text-purple-200"  >Feedback Center</h1>
+                <h1 className="uppercase text-xl font-bold align-left text-purple-900" >Feedback Center</h1>
             </header>
             {/* Conteúdo principal */}
             <main>
-                <div className="py-2">
-                    <div>
-                        <img src={cover} alt={'movie cover'}/>
-                    </div>
-                </div>
+             
 
-                <div className="flex-grow flex flex-col items-center justify-center p-8">
+                <div className="flex flex-col items-center justify-center p-8">
+                    <div className="py-2 ">
+                        <div>
+                            <img className="h-100" src={cover} alt={'movie cover'}/>
+                        </div>
+                    </div>
+                   
                     <div className="text-center">
                         <h1 className="text-4xl  text-black font-bold mb-4">Divertidamente 2 | O Filme</h1>
                         <p className="text-lg text-blue-600">
@@ -120,7 +121,7 @@ export default function Home() {
                     </div>
 
                     <hr/>
-                    <div className="mt-8 w-full max-w-2xl bg-white p-6 rounded shadow-lg">
+                    <div className="mt-8 w-full max-w-xl text-justify bg-white p-6 rounded shadow-lg">
                         <p className="text-gray-700">
                             Divertida Mente 2, da Disney e da Pixar, retorna à mente da adolescente Riley, e o faz no
                             momento em que a sala de comando está passando por uma demolição repentina
